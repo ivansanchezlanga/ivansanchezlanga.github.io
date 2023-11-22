@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e0e4b30e1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Inicio</a></li>
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#aficiones">Intereses y aficiones</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p> Estudiante Trabajador/Solicito </p>
+            <h1>Hola, soy <span>Ivan Sanchez</span><br>...</h1>
+        </div>
+    </div>
+</div>
+
+<!-- Sobre mi -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Sobre mi</h1>
+                    <P>Soy un apasionado estudiante de sistemas microinformáticos y redes, actualmente matriculadome en el centro escolar La Ferreria, ubicado en Moncada y Reixach. Mi trayectoria académica estará enfocada en el mundo de la informática, donde hasta ahora he desarrollado habilidades sólidas y conocimientos en sistemas, redes y tecnologías. <br><br>
+
+                        Me defino como una persona proactiva, responsable y ordenada, cualidades que considero esenciales para mi desarrollo profesional. Mi enfoque hacia el aprendizaje es constante, siempre estoy buscando nuevas oportunidades para ampliar mis conocimientos y mantenerme actualizado en un campo tan dinámico como la informática.<br><br>
+                        
+                        Además de mi sólida base técnica, me destaco por mis habilidades comunicativas, las cuales me facilitan la colaboración en equipo y la resolución de problemas de manera eficiente. La combinación de mi pasión por la tecnología y mi compromiso con la excelencia me convierte en un estudiante motivado y con un gran potencial para contribuir de manera significativa en proyectos futuros.<br><br>
+                        
+                        Estoy emocionado por las oportunidades que el mundo de la informática ofrece y estoy listo para enfrentar nuevos desafíos que me permitan crecer tanto profesional como personalmente. ¡Bienvenido a mi Portfolio Personal, donde compartiré mis proyectos, habilidades, educación y experiencia!</P>
+            
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('experiencialaboral')">Experiencia laboral</p>
+                    <p class="tab-links" onclick="opentab('educacion')">Educación</p>
+                    <p class="tab-links" onclick="opentab('certificaciones')">Licencias y certificaciones</p>
+                </div>
+                <div class="tab-contents active-tab" id="experiencialaboral">
+                    <ul>
+                        <li><span>Oct. 2023 - actualidad · 2 meses</span>
+                            <br>Alsina Formwork · Contrato de prácticas
+                            <br>Técnico de sistemas
+                            <br>Montcada I Reixac, Cataluña, España · Presencial
+                        </li>
+                    </ul> 
+                </div>
+                <div class="tab-contents" id="educacion">
+                    <ul>
+                        <li><span>Sept. 2022 - Jun. 2024</span>
+                           <br>Ciclo Formativo de Grado Medio, Sistemas microinformativos y redes
+                           <br>Instituto la Ferreria, Montcada i Reixach.
+                        </li>
+                    </ul><br>
+                    <ul>
+                        <li><span>Sept. 2018 - Jun. 2022</span>
+                           <br>Educación Secundaria Obligatoria (ESO)
+                           <br>Instituto Marina, La Llagosta.
+                        </li>
+                    </ul> 
+                </div>
+                <div class="tab-contents" id="certificaciones">
+                    <ul>
+                        <li><span>B1 Preliminary</span>
+                            <br>Cambridge University Press & Assessment English
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Aficiones -->
+<div id="aficiones">
+    <div class="container">
+        <h1 class="sub-title">Mis intereses y aficiones</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Proyecto de Sintesis:</h3>
+                    <p>
+                    El proyecto de Sistesis nos pone en el contexto de la creación de una aula de informatica y, para ello, un grupo confomado de tres personas ha de crear y presentar una planificación profesional para la creación de la misma.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+            </div>
+        </div>
+        <a href="#" class="btn">Ver más</a>
+    </div>
+</div>
+
+<!-- Contacto -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contacta conmigo</h1>
+                <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>123456789</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ivan-sanchez-langa-14223b294/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ivansanchezlanga"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="documents/CVCastellano_Ivan.pdf" download class="btn btn2">Descargar CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu email" required>
+                    <textarea name="message" rows="6" placeholder="Tu mensaje"></textarea>
+                    <button type="submit" class="btn btn2">Enviar</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©Ivan.</p>
+    </div>
+</div>
+<!-- Made with <i class="fa-brands fa-github"></i> GitHub Pages -->
+
+<!-- Scripts -->
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyBkINx5uOFIOvFbD-sifbePJhRbZAoQTIRB4dc4Kocbqh8ewGqNWdaa9ddd5KXBb0y/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "¡Mensaje enviado correctamente!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+</body>
+</html>
